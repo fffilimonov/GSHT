@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+
+set IP [lindex $argv 0]
+set timeout 12
+
+spawn telnet $IP
+
+expect "Password:"
+send "admin\r"
+expect "GS>"
+send "upgrade\r"
+expect "UPGRADE>"
+send "upgrade\r"
+expect "(y/N)?"
+send "y\r"
+expect ">"

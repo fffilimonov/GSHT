@@ -1,0 +1,23 @@
+#current IP
+IPGS=192.168.0.22;
+
+#new static IP configuration
+NEWIP=10.10.0.90;
+MASK=255.255.255.0;
+GW=10.10.0.1;
+DNS=10.10.0.1;
+
+#pass for admin
+NEWPASS="newpass";
+
+#common SIP settings
+DOMAIN="sip.ru";
+OUTBOUND="10.10.0.10";
+
+#user1
+USER1="3232";
+PASS1="12345";
+
+#user2
+USER2="3233";
+PASS2="12345";
