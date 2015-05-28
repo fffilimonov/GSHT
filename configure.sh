@@ -409,6 +409,8 @@ curl -d "$ADVANCEDCONF" http://$IPGS/cgi-bin/update -b cookie;
 
 curl -d "$LINE1" http://$IPGS/cgi-bin/update -b cookie;
 
-curl -d "$LINE2" http://$IPGS/cgi-bin/update -b cookie;
+if [ "$USER2" != "" ]; then
+    curl -d "$LINE2" http://$IPGS/cgi-bin/update -b cookie;
+fi;
 
 curl http://$IPGS/cgi-bin/rs -b cookie;
